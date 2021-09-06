@@ -20,16 +20,19 @@ Tests are located under `./cypress` :
 ├── integration
 │   ├── features
 │   │   ├── cart
-│   │   ├── homePage.feature
+│   │   │   └── cart.feature
+│   │   ├── home-page.feature
+│   │   ├── product
+│   │   │   └── product.feature
 │   │   ├── shared
 │   │   │   └── header.feature
 │   │   └── users
 │   │       ├── account
-│   │       │   ├── addresses.feature
-│   │       │   ├── creditSlips.feature
-│   │       │   ├── orderHistory.feature
-│   │       │   ├── personalInformation.feature
-│   │       │   └── wishlists.feature
+│   │       │   ├── address.feature
+│   │       │   ├── credit-slip.feature
+│   │       │   ├── order-history.feature
+│   │       │   ├── personal-information.feature
+│   │       │   └── wish-list.feature
 │   │       ├── login.feature
 │   │       └── register.feature
 │   └── step_definitions
@@ -40,9 +43,10 @@ Tests are located under `./cypress` :
 │           └── When.js
 ├── plugins
 │   └── index.js
-└── support
-    ├── commands.js
-    └── index.js
+├── support
+│   ├── commands.js
+│   └── index.js
+└── workflows
 
 ```
 

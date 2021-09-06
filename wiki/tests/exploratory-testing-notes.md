@@ -1,5 +1,5 @@
 
-# Exploratory testing session: Findings
+# Exploratory testing session: Some Findings
 What to check for :
 ## Login
 

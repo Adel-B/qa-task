@@ -27,10 +27,10 @@
 
 ## Tests
 
-- [About the tests](/wiki/tests/README.md)
-- [Test Plan](./QA_Deliverables/TEST_PLAN.md)
-- [Exploratory Testing Notes ](/wiki/tests/results.md)
-- [Test Results](/wiki/tests/results.md)
-- [Performance](/wiki/tests/performance.md)
-- [Security](/wiki/tests/performance.md)
+- [About the tests](./wiki/tests/README.md)
+- [Test Plan](./qa_deliverables/test-plan.md)
+- [Exploratory Testing Notes ](./wiki/tests/exploratory-testing-notes.md)
+- [Test Results](./wiki/tests/results.md)
+- [Performance](./wiki/tests/performance.md)
+- [Security](./wiki/tests/security.md)
 - ...
