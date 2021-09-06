@@ -1,5 +1,6 @@
 {
   "baseUrl": "http://automationpractice.com/index.php",
   "ignoreTestFiles": "*.js",
-  "testFiles": "**/*.feature"
+  "testFiles": "**/*.feature",
+  "projectId": "y5z42y"
 }
