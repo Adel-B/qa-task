@@ -2546,7 +2546,7 @@ commander@^5.1.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
   integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
 
-commitizen@^4.0.3, commitizen@^4.2.4:
+commitizen@4.2.4, commitizen@^4.0.3:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.2.4.tgz#a3e5b36bd7575f6bf6e7aa19dbbf06b0d8f37165"
   integrity sha512-LlZChbDzg3Ir3O2S7jSo/cgWp5/QwylQVr59K4xayVq8S4/RdKzSyJkghAiZZHfhh5t4pxunUoyeg0ml1q/7aw==
@@ -4143,7 +4143,7 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gherkin-lint@^4.2.2:
+gherkin-lint@4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/gherkin-lint/-/gherkin-lint-4.2.2.tgz#01e8276902fd7b7394babebd9d1f4d1952648a2f"
   integrity sha512-+vu0wbrwxaaEdrheU9pH2MYR6zk38u2IkrCIg6IETUw1lkrNVAfIfOCihwrrL2NTJv5Iia/C7hZEBNwjGSkL2Q==
