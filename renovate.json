@@ -1,10 +1,24 @@
 {
-  "rangeStrategy": "pin",
-  "baseBranches": ["dependency-updates"],
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
+    },
+    {
+      "packagePatterns": ["eslint", "prettier"],
+      "groupName": "eslint packages"
+    },
+    {
+      "packagePatterns": ["cypress"],
+      "groupName": "cypress packages"
+    },
+    {
+      "packagePatterns": ["cypress-cucumber-preprocessor"],
+      "groupName": "cucumber packages"
     }
   ]
 }
