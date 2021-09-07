@@ -126,3 +126,4 @@ yarn-error.log*
 # Ignore cookie # TODO: I need to move this from fixtures to env var CYPRESS_
 cypress/fixtures/cookie.json
 TODO
+cypress/videos/*
