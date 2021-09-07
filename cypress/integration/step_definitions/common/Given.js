@@ -5,8 +5,8 @@ Given("I navigate to the Home Page", () => {
 });
 
 Given("I log in", () => {
-  const name = Cypress.env("cookieName");
-  const value = Cypress.env("cookieValue");
+  const name = Cypress.env("COOKIENAME");
+  const value = Cypress.env("COOKIEVALUE");
   cy.setCookie(name, value, { expiry: 10000000000 });
   cy.getCookie(name).should("have.property", "value", value);
 });
