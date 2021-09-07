@@ -63,10 +63,13 @@ jobs:
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: cypress/integration/features/*
+          spec: cypress/integration/features/**
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_COOKIENAME: ${{ secrets.CYPRESS_COOKIENAME }}
+          CYPRESS_COOKIEVALUE: ${{ secrets.CYPRESS_COOKIEVALUE }}
+          CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
           # Recommended: pass the GitHub token lets this action correctly
           # determine the unique run id necessary to re-run the checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

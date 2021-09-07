@@ -2,5 +2,11 @@
   "baseUrl": "http://automationpractice.com/index.php",
   "ignoreTestFiles": "*.js",
   "testFiles": "**/*.feature",
-  "projectId": "y5z42y"
+  "projectId": "y5z42y",
+  "env": {
+    "username": "fakeuser@domain.fr",
+    "password": "",
+    "cookieName":"",
+    "cookieValue":""
+  }
 }

@@ -5,9 +5,10 @@ Given("I navigate to the Home Page", () => {
 });
 
 Given("I log in", () => {
-  cy.fixture("cookie").then((cookie) => {
-    cy.setCookie(cookie.name, cookie.value, { expiry: 10000000000 });
-  });
+  const name = Cypress.env("COOKIENAME");
+  const value = Cypress.env("COOKIEVALUE");
+  cy.setCookie(name, value, { expiry: 10000000000 });
+  cy.getCookie(name).should("have.property", "value", value);
 });
 
 Given("I log out", () => {
