@@ -1,4 +1,4 @@
-name: CI
+name: CI - Performance / Lighthouse Audit
 on:
   push:
     branches: [master]
