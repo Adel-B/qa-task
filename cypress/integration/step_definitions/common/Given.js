@@ -1,7 +1,7 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
 
 Given("I navigate to the Home Page", () => {
-  cy.visit("/");
+  cy.visit("/index.php");
 });
 
 Given("I log in", () => {
@@ -13,4 +13,8 @@ Given("I log in", () => {
 
 Given("I log out", () => {
   cy.clearCookies();
+});
+
+Given(/^I navigate to the webpage at url "(.*?)"$/, (url) => {
+  cy.visit(url);
 });
