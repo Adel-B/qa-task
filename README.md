@@ -29,7 +29,7 @@
 
 - [About the tests](/wiki/tests/README.md)
 - [Test Plan](./QA_Deliverables/TEST_PLAN.md)
-- [Exploratory Testing Notes ](/wiki/tests/results.md)
+- [Exploratory Testing Notes ](/wiki/tests/exploratory-testing-notes.md)
 - [Test Results](/wiki/tests/results.md)
 - [Performance](/wiki/tests/performance.md)
 - [Security](/wiki/tests/performance.md)
