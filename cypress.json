@@ -1,8 +1,9 @@
 {
-  "baseUrl": "http://automationpractice.com/index.php",
+  "baseUrl": "http://automationpractice.com",
   "ignoreTestFiles": "*.js",
   "testFiles": "**/*.feature",
   "projectId": "y5z42y",
+  "defaultCommandTimeout": 10000,
   "env": {
     "username": "fakeuser@domain.fr",
     "password": "",

@@ -1,11 +1,29 @@
 Feature: Login
+    Login Test Suite
+
+    Background:
+        Given I navigate to the webpage at url "/index.php?controller=authentication&back=my-account"
+
     Scenario: Greets
-    # greets with sign in ==> Already registered?
+        Then I should see the text "Already registered?"
+
+    Scenario Outline: Login not allowed with invalid cred
+        When I login with <username> and <password>
+        And I click on the button "SubmitLogin"
+        Then I should see the text "<ExpectedError>"
+
+        Examples:
+            | username     | password | ExpectedError             |
+            |              | pwd      | An email address required |
+            | email@d.com  |          | Password is required      |
+            | invalidemail | password | Invalid email address     |
+            | email@d.com  | password | Authentication failed     |
+            |              |          | An email address required |
+
     Scenario: Password Forgotten
-    # link Forgot your password? ==> #/index.php?controller=password
-    Scenario: Require Email
-    # require email
-    Scenario: Require Password
-    # require password
+        Then I should have a link to renew my password
+
     Scenario: Require Valid Username and Password to Login
-# requires valide username and password to navigate to #/ successful login
+        When I login with valid credentials
+        And I click on the button "SubmitLogin"
+        Then I am redirected to "my-account"
