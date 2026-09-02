@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Cypress install
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v7.4.3
         with:
           runTests: false
       # report machine parameters
@@ -55,7 +55,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "UI Tests - Chrome"
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v7.4.3
         with:
           wait-on: "http://automationpractice.com/index.php"
           wait-on-timeout: 120
